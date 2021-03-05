@@ -1,0 +1,20 @@
+{
+  "name": "obaranovskyi-starter-kit",
+  "version": "1.0.0",
+  "description": "Test package to go trough the CI flow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obaranovskyi/obaranovskyi-starter-kit.git"
+  },
+  "keywords": ["js", "starter-kit"],
+  "author": "Oleh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/obaranovskyi/obaranovskyi-starter-kit/issues"
+  },
+  "homepage": "https://github.com/obaranovskyi/obaranovskyi-starter-kit#readme"
+}
