@@ -10,11 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/obaranovskyi/obaranovskyi-starter-kit.git"
   },
-  "keywords": ["js", "starter-kit"],
+  "keywords": [
+    "js",
+    "starter-kit"
+  ],
   "author": "Oleh",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/obaranovskyi/obaranovskyi-starter-kit/issues"
   },
-  "homepage": "https://github.com/obaranovskyi/obaranovskyi-starter-kit#readme"
+  "homepage": "https://github.com/obaranovskyi/obaranovskyi-starter-kit#readme",
+  "devDependencies": {
+    "eslint": "^7.21.0"
+  }
 }
