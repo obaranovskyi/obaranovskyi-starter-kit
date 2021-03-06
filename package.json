@@ -4,6 +4,9 @@
   "description": "Test package to go trough the CI flow.",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "rollup -c",
     "lint": "eslint '**/*.js'; exit 0",
     "lint:fix": "prettier-eslint $PWD/'src/**/*.js' --write"
   },
@@ -36,6 +39,8 @@
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
     "prettier-eslint": "^12.0.0",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier-eslint-cli": "^5.0.0",
+    "rollup": "^2.40.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
