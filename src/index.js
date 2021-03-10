@@ -1,5 +1,3 @@
-import React from "react";
+export * from "./Ellipsis";
 
-const StarterKit = () => <h1>Hello Starter kit</h1>;
-
-export default StarterKit;
+export * from "./Ring";
