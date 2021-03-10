@@ -3,7 +3,7 @@ import styles from "./styles.css";
 
 const Ellipsis = () => (
   <>
-    <style>${`${styles}`}</style>
+    <style>{`${styles}`}</style>
     <div className="lds-ellipsis">
       <div></div>
       <div></div>
