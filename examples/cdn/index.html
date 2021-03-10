@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CDN Example</title>
+</head>
+<body>
+  <div id="container"></div>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="./node_modules/obaranovskyi-starter-kit/dist/bundle.umd.js"></script>
+  <script>
+    const { Ellipsis } = window.StarterKidLib;
+    const container = document.getElementById('container');
+    ReactDOM.render(
+      React.createElement(Ellipsis),
+      container
+    );
+  </script>
+</body>
+</html>

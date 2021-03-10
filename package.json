@@ -2,7 +2,9 @@
   "name": "obaranovskyi-starter-kit",
   "version": "1.0.0",
   "description": "Test package to go trough the CI flow.",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffect": false,
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
