@@ -1,0 +1,23 @@
+# turn off the sudo mode 
+sudo: false
+
+# language is nodejs
+language: node_js
+
+# node.js version 
+# this means the latest
+node_js:
+  - node
+
+# There are 3 phases 
+# 1. install 
+# 2. script 
+# 3. deploy
+
+script:
+  - npm run lint
+  - npm run test:coveralls
+
+# disable email notification
+notifications:
+  email: false

@@ -13,8 +13,8 @@
     "lint:fix": "prettier-eslint $PWD/'src/**/*.js' --write",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
     "test:coverage": "jest --findRelatedTests",
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "storybook": "start-storybook -p 9001 -c storybook",
     "storybook:build": "build-storybook -c storybook"
   },
@@ -53,6 +53,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
+    "coveralls": "^3.1.0",
     "eslint": "^7.21.0",
     "eslint-plugin-jest": "^24.2.1",
     "eslint-plugin-react": "^7.22.0",
