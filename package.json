@@ -16,7 +16,9 @@
     "test:coverage": "jest --findRelatedTests",
     "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "storybook": "start-storybook -p 9001 -c storybook",
-    "storybook:build": "build-storybook -c storybook"
+    "storybook:build": "build-storybook -c storybook",
+    "predeploy": "npm run storybook:build",
+    "deploy": "gh-pages -d storybook-static"
   },
   "repository": {
     "type": "git",
@@ -42,7 +44,7 @@
   "bugs": {
     "url": "https://github.com/obaranovskyi/obaranovskyi-starter-kit/issues"
   },
-  "homepage": "https://github.com/obaranovskyi/obaranovskyi-starter-kit#readme",
+  "homepage": "https://obaranovskyi.github.io/obaranovskyi-starter-kit",
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.9",
@@ -57,6 +59,7 @@
     "eslint": "^7.21.0",
     "eslint-plugin-jest": "^24.2.1",
     "eslint-plugin-react": "^7.22.0",
+    "gh-pages": "^3.1.0",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
